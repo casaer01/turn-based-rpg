@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://c38f6fxrqlww2"]
+[gd_scene load_steps=3 format=3 uid="uid://c38f6fxrqlww2"]
 
 [ext_resource type="PackedScene" uid="uid://m06vy1mecivp" path="res://tscnItems/Character.tscn" id="1_qqbc3"]
+[ext_resource type="Script" path="res://TurnManager.gd" id="1_sv85e"]
 
 [node name="BattleScene" type="Node2D"]
+script = ExtResource("1_sv85e")
 
 [node name="Character" parent="." instance=ExtResource("1_qqbc3")]
 
