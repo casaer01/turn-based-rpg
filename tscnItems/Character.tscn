@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://m06vy1mecivp"]
+[gd_scene load_steps=6 format=3 uid="uid://m06vy1mecivp"]
 
+[ext_resource type="Script" path="res://tscnItems/Character.gd" id="1_ehkrk"]
 [ext_resource type="Texture2D" uid="uid://dt003bju8vprd" path="res://Sprites/Dragon.png" id="1_i6kyk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8e4e5"]
@@ -14,6 +15,7 @@ outline_size = 3
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Character" type="Node2D"]
+script = ExtResource("1_ehkrk")
 
 [node name="Dragon" type="Sprite2D" parent="."]
 texture = ExtResource("1_i6kyk")
