@@ -44,3 +44,6 @@ func _update_Health_bar():
 
 func _on_character_begin_turn(character):
 	pass
+	
+func cast_combat_action(action):
+	pass
