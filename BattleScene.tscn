@@ -10,9 +10,11 @@
 [ext_resource type="Script" path="res://PlayerUI.gd" id="8_4vnn2"]
 [ext_resource type="Script" path="res://CombatActionButton.gd" id="8_ibeik"]
 
-[node name="BattleScene" type="Node2D"]
+[node name="BattleScene" type="Node2D" node_paths=PackedStringArray("player_char", "enemy_char")]
 position = Vector2(1, 0)
 script = ExtResource("1_sv85e")
+player_char = NodePath("Player")
+enemy_char = NodePath("Enemy")
 
 [node name="Player" parent="." node_paths=PackedStringArray("oppenent") instance=ExtResource("1_qqbc3")]
 position = Vector2(-437, 0)
@@ -36,6 +38,7 @@ offset_top = 122.0
 offset_right = -326.0
 offset_bottom = 289.0
 script = ExtResource("8_4vnn2")
+buttons = [NodePath("CombatAction"), NodePath("CombatAction2"), NodePath("CombatAction3"), NodePath("CombatAction4")]
 
 [node name="CombatAction" type="Button" parent="PlayerCombatActionUI"]
 layout_mode = 2
