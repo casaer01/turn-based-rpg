@@ -25,4 +25,4 @@ func _display_combat_actions (combat_actions):
 			button.text = combat_actions[i].display_name
 			button.combat_action = combat_actions[i]
 		else:
-			button.visible =false
+			button.visible = false
